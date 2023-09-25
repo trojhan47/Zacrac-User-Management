@@ -8,7 +8,7 @@ class CORS {
 	public mount(app: Application): Application {
 		Log.info(`Booting the \'CORS\' middleware...`);
 
-		const whitelist = [ /* "*" */Locals.config().url]
+		const whitelist = [ "*"]
 const options = {
 	origin (origin: any, callback: any) {
 	if (whitelist.indexOf(origin) !== -1) {
