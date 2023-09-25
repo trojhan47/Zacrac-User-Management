@@ -1,0 +1,45 @@
+
+### Get all user profiles
+GET http://localhost:{"insert your Port here"}/api/users
+# Example http://localhost:9967/api/users
+Connection: keep-alive
+
+
+### Get a user by email or userID or username
+GET http://localhost:{"insert your Port here"}/api/users/{insert search param here}
+# example http://localhost:9967/api/users/test@gmail.com
+Connection: Keep-alive
+
+### create new user
+POST http://localhost:{"insert your Port here"}/api/users
+# Example http://localhost:9967/api/users
+Connection: keep-alive
+Content-Type: application/json
+
+{
+"first_name":"Johny",
+"last_name":"Doe",
+"username":"doeysety",
+"address":"testing no 7 Nigeira",
+"phone_number":"+2348168004875",
+"email":"jdyseytu@gmail.com"
+}
+
+### Update User profile by email, username or userID
+POST http://localhost:{"insert your Port here"}/api/users/{insert search param here}
+# Example http://localhost:9967/api/users/jdyseytu@gmail.com
+Connection: keep-alive
+Content-Type: application/json
+
+{
+"first_name":"Johny",
+"last_name":"Doe do",
+"username":"doeysetyhbjkh",
+"address":"testing no 7 Nigeira",
+"phone_number":"+2348168004875"
+}
+
+### Delete User profile by email, username or userID
+DELETE  http://localhost:{"insert your Port here"}/api/users/{insert search param here}
+# Example  http://localhost:9967/api/users/jdyseytu@gmail.com
+Connection: keep-alive
