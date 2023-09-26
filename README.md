@@ -50,7 +50,71 @@ Open the rest.http file in your code editor.
 
 You can now send requests to the API endpoints directly from the rest.http file.
 
-Alternatively, you can use tools like Postman to test the APIs by importing the rest.http file.
+ALTERNATIVELY
+you can use tools like Postman to test the APIs by importing the rest.http file.
+ OR FIND THE ENDPOINTS URL BELOW
+## API ENDPOINTS
+
+The following endpoints are available for the application and their input bodies/parameters
+FOR LOCAL SETUP
+### Get all user profiles
+GET http://localhost:PORT/api/users
+Connection: keep-alive
+### Get a user by email or userID or username
+GET http://localhost:PORT/api/users/test@gmail.com or userID or username
+Connection: Keep-alive
+### create new user
+POST http://localhost:PORT/api/users
+Connection: keep-aliveContent-Type: application/json
+{"first_name":"Johny",
+"last_name":"Doe do",
+"username":"doeysetyhbjkh",
+"address":"testing no 7 Nigeria",
+"phone_number":"+2348187654323"}
+### Update User profile by email, username or userID
+POST http://localhost:PORT/api/users/jdyseytu@gmail.com or userID or username
+Connection: keep-aliveContent-Type: application/json
+{"first_name":"Johny",
+"last_name":"Doe do",
+"username":"doeysetyhbjkh",
+"address":"testing no 7 Nigeria",
+"phone_number":"+2348187654323"}
+### Delete User profile by email, username or userID
+DELETE http://localhost:PORT/api/users/jdyseytu@gmail.com or userID or username
+Connection: keep-alive
+
+
+FOR PRODUCTION SETUP 
+### Get all user profiles
+GET http://13.51.241.140/api/users
+Connection: keep-alive
+### Get a user by email or userID or username
+GET http://13.51.241.140/api/users/test@gmail.com or userID or username
+Connection: Keep-alive
+### create new user
+POST http://13.51.241.140/api/users
+Connection: keep-alive
+Content-Type: application/json
+{"first_name":"Johny",
+"last_name":"Doe",
+"username":"doeysety",
+"address":"testingno 7 Nigeria",
+"phone_number":"+2348156565656",
+"email":"jdyseytu@gmail.com"
+}
+### Update User profile by email, username or userID
+POST http://13.51.241.140/api/users/jdyseytu@gmail.com or userID or username
+Connection: keep-alive
+Content-Type: application/json
+{"first_name":"Johny",
+"last_name":"Doedo",
+"username":"doeysetyhbjkh",
+"address":"testingno 7 Nigeria"
+,"phone_number":"+2348187654323"
+}
+### Delete User profile by email, username or userID
+DELETE  http://13.51.241.140/api/users/jdyseytu@gmail.com or userID or username
+Connection: keep-alive
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
