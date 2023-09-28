@@ -1,4 +1,4 @@
-# Zacrac-user-profile-application-assessment
+# Zacrac-user-profile-application
 
 This project repository contains a Node.js + MongoDB application written in TypeScript. It serves as a backend for a user management system. Below are instructions on how to set up and run the application.
 
